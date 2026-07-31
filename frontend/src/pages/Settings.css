@@ -1,0 +1,136 @@
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.settings-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.settings-card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+}
+
+.settings-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.settings-icon {
+    color: var(--primary-color);
+}
+
+.settings-header h3 {
+    font-size: 1.2rem;
+}
+
+.info-group {
+    margin-bottom: 1.25rem;
+}
+
+.info-group label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.info-group p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.badge-premium {
+    display: inline-block;
+    background-color: rgba(139, 92, 246, 0.1);
+    color: #8b5cf6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.theme-toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-sm {
+    font-size: 0.85rem;
+}
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+/* Toggle Switch CSS */
+.toggle-btn {
+    width: 50px;
+    height: 26px;
+    background-color: var(--border-color);
+    border-radius: 13px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn.active {
+    background-color: var(--primary-color);
+}
+
+.toggle-slider {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.3s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.toggle-btn.active .toggle-slider {
+    transform: translateX(24px);
+}
+
+.danger-zone {
+    border-color: #fecaca;
+    background-color: rgba(254, 226, 226, 0.2);
+}
+
+.danger-zone h3 {
+    color: var(--danger-color);
+    margin-bottom: 1rem;
+}
+
+.btn-logout-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.875rem;
+    background-color: var(--danger-color);
+    color: white;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.btn-logout-full:hover {
+    background-color: #b91c1c;
+}

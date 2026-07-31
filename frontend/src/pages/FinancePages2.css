@@ -1,0 +1,122 @@
+/* Add to FinancePages.css */
+.budget-card {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.budget-card:hover {
+    border-color: var(--primary-color);
+}
+
+.budget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.budget-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+}
+
+.budget-title h4 {
+    font-size: 1.05rem;
+    color: var(--text-primary);
+}
+
+.budget-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar-container {
+    height: 8px;
+    width: 100%;
+    background-color: var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease-out;
+}
+
+.budget-dates {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-align: right;
+}
+
+/* Wallets */
+.wallet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.wallet-card {
+    background: linear-gradient(135deg, var(--card-bg) 0%, var(--bg-color) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.wallet-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.wallet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wallet-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wallet-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.wallet-type {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background-color: var(--bg-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.wallet-balance h2 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
