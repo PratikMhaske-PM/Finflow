@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(helmet());
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'https://finflow-fwoo.vercel.app/login',
+    origin: process.env.FRONTEND_URL || 'https://finflow-fwoo.vercel.app/',
     credentials: true
 }));
 
