@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://finflow-czwb.onrender.com/',
+    baseURL: 'http://localhost:5000/api', 
+    'https://finflow-czwb.onrender.com/'// Replace with your backend API URL
     headers: {
         'Content-Type': 'application/json'
     },
